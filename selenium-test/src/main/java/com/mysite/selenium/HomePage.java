@@ -49,14 +49,20 @@ public class HomePage {
 
             Thread.sleep(1000);
 
+            WebElement webElement=driver.findElement(By.xpath("/html/body/div[3]/div[4]/div[4]/div[2]/div[2]/div[4]/div/div[2]/div[1]/div/div/div[1]/div[2]/a/div/span/span"));
+            WebElement webElement1=driver.findElement(By.xpath("/html/body/div[3]/div[4]/div[4]/div[2]/div[2]/div[4]/div/div[2]/div[1]/div/div/div[1]/div[1]/div[1]/div[1]/div/div[2]"));
+
+            System.out.println("The Airline is " + webElement1.getText());
+            System.out.println("The cost is " + webElement.getText());
+
+
 
             driver.findElement(By.xpath("/html/body/div[3]/div[4]/div[4]/div[2]/div[2]/div[4]/div/div[2]/div[1]/div/div/div[1]/div[2]/a/div/span/span")).click();
 
             Thread.sleep(5000);
 
-            WebElement webElement=driver.findElement(By.xpath("/html/body/form/div[5]/div/div[2]/div/p/em[2]"));
-            webElement.getText();
-            System.out.println(webElement.getText());
+
+
 
 
         }
